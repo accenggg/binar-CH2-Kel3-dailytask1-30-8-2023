@@ -6,7 +6,13 @@
 
 function solution(x,y) {
     // tulis jawabanmu disini
-
+    if (x % 5 === 0){
+        const biayaAdmin = 0.5
+        let sisaSaldo = y - x - biayaAdmin
+        return sisaSaldo
+    } else {
+        return y
+    }
 }
 
 console.log(solution(30,20)) // expected output 89.5

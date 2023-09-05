@@ -6,11 +6,17 @@
 
 function solution(x,y) {
     // tulis jawabanmu disini
+    // 1. mengecek input user, apabila input x habis dibagi 5, maka jalankan program didalam block
     if (x % 5 === 0){
+        // 2. simpan biaya admin kedalam variabel biayaAdmin
         const biayaAdmin = 0.5
+        // 3. melakukan perhitungan mengurangkan jumlah uang - uang yang ditarik - biaya admin
         let sisaSaldo = y - x - biayaAdmin
+        // 4. mengembalikan sisaSaldo yang sudah diubah
         return sisaSaldo
+    // 5. jika x tidak habis dibagi 5
     } else {
+        // 6. mengembalikan sisaSaldo yang sudah diubah
         return y
     }
 }

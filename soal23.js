@@ -17,3 +17,31 @@ const students = [
     { name: "Evan", score: 55},
     { name: "Rowling", score: 90}
 ]
+
+function cekKelulusan (data) {
+    // 1. melakukan perulangan untuk mengecek data student satu persatu
+    for (let i = 0; i < data.length; i++){
+        // 2. mengecek jika data diatas atau sama dengan 70, maka jalankan program
+        if (data[i].score >= 70){
+            // 3. menambahkan status lulus ke key baru
+            data[i].status = "Lulus"
+        } 
+        // 4. mengecek jika data diatas atau sama dengan 50 dan dibawah 70, maka jalankan program
+        else if (data[i].score >= 50 && data[i].score < 70){
+            // 5. menambahkan status remedial ke key baru
+            data[i].status = "Remedial"
+        } 
+        // 6. mengecek jika data dibawah 50, maka jalankan program
+        else {
+            // 7. menambahkan status tidak lulus ke key baru
+            data[i].status = "Tidak Lulus"
+        }
+    }
+    // 8. mengembalikan nilai
+    return data
+}
+
+// 9. membuat variabel dataBaru untuk menampung hasil
+const dataSiswa = cekKelulusan(students)
+// 10. menampilkan dataBaru
+console.log(dataSiswa);

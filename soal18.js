@@ -7,14 +7,20 @@ function solution(str) {
     // tulis jawabanmu disini
     // 1. menyiapkan variabel berisi string kosong untuk menampung hasil
     let result = ""
+    // 2. melakukan perulangan untuk mengecek karakter string satu persatu
     for (let i = 0; i<str.length; i++){
-        // console.log(str[i]);
+        // 3. mengecek jika karakter string adalah '.', maka jalankan program
         if (str[i] === "."){
+            // 4. simpan tanda () ke dalam result
             result += "()"
-        } else {
+        } 
+        // 5. jika karakter bukan '.', maka jalankan program
+        else {
+            // 5. simpan karakter kedalam result
             result += str[i]
         }
     }
+    // 6. mengembalikan hasil
     return result
 
 }

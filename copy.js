@@ -3,6 +3,7 @@ const users = require('./users');
 
 // 14) rubah setiap company user menjadi binar dan pada email setiap user berubah menjadi @binar.org, contoh = imam@fsw2.com menjadi imam@binar.org
 const ubahDomain = () => {
+    let result = []
     for (let h=0; h<users.length; h++){
         for (let i=0; i<users[h].email.length; i++){
         let domainBinar = "@binar.org"
@@ -13,12 +14,14 @@ const ubahDomain = () => {
             // emailLama += users[h].email.slice(0,i)
             emailBaru = emailLama + domainBinar
             users[h].email = emailBaru
-            
+            result.push(emailBaru)
             break
             }
         }
     }
-    return users
+    return {
+        newEmail : result
+    }
 }
 
 const dataBaru = ubahDomain()

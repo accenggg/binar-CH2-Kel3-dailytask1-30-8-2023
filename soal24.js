@@ -9,6 +9,23 @@
 
 // Bisa diskusi dengan teman kelompokmu ya!
 
+function spellFizzBuzz () {
+    let printSpell = ""
+    for (let i=1; i <= 100; i++){
+        if (i % 3 === 0 && i % 5 === 0){
+            printSpell = "FizzBuzz"
+        } else if ( i % 3 === 0){
+            printSpell = "Fizz"
+        } else if ( i % 5 === 0){
+            printSpell = "Buzz"
+        } else {
+            printSpell = i
+        }
+        console.log(printSpell);
+    }
+}
+
+spellFizzBuzz()
 // expected output :
 // 1
 // 2

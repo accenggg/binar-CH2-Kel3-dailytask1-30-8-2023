@@ -10,17 +10,31 @@
 // Bisa diskusi dengan teman kelompokmu ya!
 
 function spellFizzBuzz () {
+    // 1. membuat variabel printSpell untuk menyimpan data
     let printSpell = ""
+    // 2. melakukan perulangan 1 - 100
     for (let i=1; i <= 100; i++){
+        // 3. mengecek jika nilai modulo 3 dan 5 sama dengan 0, maka jalankan program
         if (i % 3 === 0 && i % 5 === 0){
+            // 4. isi variabel printSpell dengan FizzBuzz
             printSpell = "FizzBuzz"
-        } else if ( i % 3 === 0){
+        } 
+        // 5. mengecek jika nilai modulo 3 sama dengan 0, maka jalankan program
+        else if ( i % 3 === 0){
+            // 6. isi variabel printSpell dengan Fizz
             printSpell = "Fizz"
-        } else if ( i % 5 === 0){
+        } 
+        // 7. mengecek jika nilai modulo 5 sama dengan 0, maka jalankan program
+        else if ( i % 5 === 0){
+            // 8.isi variabel printSpell dengan Buzz
             printSpell = "Buzz"
-        } else {
+        } 
+        // 9. mengecek jika tidak ada syarat terpenuhi, maka jalankan program
+        else {
+            // 10. isi variabel printSpell dengan nilai index
             printSpell = i
         }
+        // 11.menampilkan value printSpell
         console.log(printSpell);
     }
 }

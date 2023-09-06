@@ -8,9 +8,9 @@ const eyeColorCheck = (data) => {
     let totalEyeBlue = 0;
     // 2. melakukan perulangan untuk mengecek data user satu persatu
     for (let i = 0; i < data.length; i++){
-        // 3. mengecek jika gender user adalah female, jalankan program
+        // 3. mengecek jika eyeColor user adalah blue, jalankan program
         if(data[i].eyeColor === "blue"){
-            // 4. menambahkan 1 ke value totalFemale
+            // 4. menambahkan 1 ke value totalEyeBlue
             totalEyeBlue += 1
             // 5. menambahkan data user kedalam variabel result
             result.push({

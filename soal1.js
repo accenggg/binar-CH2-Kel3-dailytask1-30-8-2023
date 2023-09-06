@@ -225,6 +225,8 @@ const users = [
   }
 ]
 
+const data = require("./users")
+
 // 1) tentukan yang mempunyai buah favorit dia nya banana
 const checkFavFruit = (data) => {
   // 1. bikin variable array kosong
@@ -245,4 +247,4 @@ const checkFavFruit = (data) => {
   return result;
 }
 
-console.log(checkFavFruit(users));
+console.log(checkFavFruit(data));

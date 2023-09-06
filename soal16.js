@@ -21,5 +21,5 @@ function solution(x,y) {
     }
 }
 
-console.log(solution(30,20)) // expected output 89.5
+console.log(solution(30,120)) // expected output 89.5
 console.log(solution(42,100)) // expected output 100

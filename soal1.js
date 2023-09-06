@@ -234,7 +234,11 @@ const checkFavFruit = (data) => {
       // 3. check data favorit fruit yang nilai nya banana
       if (data[i].favoriteFruit === 'banana') {
           // 4. masukkan data yang sesuai hasil check kondisi di atas
-          result.push(data[i])
+          result.push({
+            id : data[i]._id,
+            name : data[i].name,
+            favoriteFruit : data[i].favoriteFruit
+        })
       }
   }
 
